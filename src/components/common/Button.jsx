@@ -4,7 +4,7 @@ const Button = ({
   variant = "primary",
   icon: Icon,
   size = "md",
-  children = "",
+  children = "Add Task",
   className = "",
   ...props
 }) => {
