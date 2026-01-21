@@ -1,6 +1,8 @@
 import React from "react";
 import Button from "../../components/common/Button";
 import SearchBar from "../../components/common/SearchBar";
+import DashboardHeader from "./DashboardHeader";
+import ProgressCard from "./ProgressCard";
 
 const DashboardPage = () => {
   const mockData = [
@@ -19,7 +21,12 @@ const DashboardPage = () => {
     { title: "Done", task: ["Team sync", "Write API documentation"] },
   ];
 
-  return <div className=""></div>;
+  return (
+    <div className="">
+      <DashboardHeader></DashboardHeader>
+      <ProgressCard></ProgressCard>
+    </div>
+  );
 };
 
 export default DashboardPage;
