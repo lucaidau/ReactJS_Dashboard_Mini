@@ -5,8 +5,8 @@ const SearchBar = ({
   placeholder = "Search",
   value,
   onChange,
-  clasName = "",
-  containerClass = "w-full",
+  className = "",
+  containerClass = "w-64",
   ...props
 }) => {
   return (
@@ -20,7 +20,7 @@ const SearchBar = ({
         value={value}
         placeholder={placeholder}
         onChange={onChange}
-        className={`${clasName} block w-full pl-10 py-2 border border-borders-bg rounded-lg text-md text-main-txt focus:outline-none focus:ring-2 focus:ring-primary-act/20 focus:border-primary-act transition-all duration-200`}
+        className={`${className} block w-full pl-10 py-2 border border-borders-bg rounded-lg text-md text-main-txt focus:outline-none focus:ring-2 focus:ring-primary-act/20 focus:border-primary-act transition-all duration-200`}
         {...props}
       />
     </div>
